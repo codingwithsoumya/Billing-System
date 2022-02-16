@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="front.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">C9</h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="Circuit.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>CLOUD 9NE</h2>
+            <h3>Buy. Think. Grow</h3>
+            <h4>Enrich your shopping list wisely</h4>
+        </div>
+    </section>
+    <div class="menu">
+        <ul>
+            <li class="clear"><a href="Index.html">Create New</a></li>
+            <li><a href="second.html">Last Bill</a></li>
+            <li><a href="review.html">Review Us</a></li>
+            <li><a href="Profile.html">About Us</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+        const clear = document.querySelector('.clear');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+        clear.addEventListener('click', () => {
+            localStorage.clear();
+        })
+
+    </script>
+</body>
+
+</html>

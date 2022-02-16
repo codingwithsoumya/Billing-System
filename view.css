@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root {
+    --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(135deg,#71b7e6, #9b59b6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+    margin: 0;
+    font-family: 'abel', sans-serif;;
+}
+.container{
+    border-radius: 5px;
+    background-color:#fefefe;
+    box-shadow:  var(--box-shadow);
+    padding: 10px 30px;
+    width: 700px;
+}
+.container h2{
+    font-size: 4em;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.table-striped{
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 650px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    font-size: 20px;
+}
+.table-striped thead tr{
+    background-color: gainsboro;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.table-striped th{
+    padding: 10px 15px;
+}
+.tbody{
+    background-color: #f3f3f3;
+    border-bottom: 2px dashed gainsboro;
+}
+.container h4{
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    margin: 40px 0px 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.container h3{
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    margin: 40px 0px 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.container p{
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+.container h5{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.container h6{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.text h4{
+    padding-top: 5px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+}
+.next{
+    margin: 10px 10px;
+    background-color: violet;
+}
+.next a{
+    text-decoration: none;
+    font-size: 22px;
+}
